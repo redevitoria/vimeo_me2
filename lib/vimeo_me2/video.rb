@@ -30,6 +30,14 @@ module VimeoMe2
       @video['name']
     end
 
+    def description= description
+      @video['description'] = description
+    end
+
+    def description
+      @video['description']
+    end
+    
     def privacy
       @video['privacy'] ||= {}
     end
